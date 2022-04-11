@@ -55,7 +55,7 @@
                     $.each(allIssues, function (i, issue) {
                         var issue_body = converter.makeHtml(issue.body);
                         $(target_class)
-                            .append("<b>" + issue.number + " - " + issue.title + "</b></br>")
+                            .append("<b>" + issue.title + "</b> (#" + issue.number + ")</br>")
                             .append(issue_body + "</br></br>");
                     });
                 });
